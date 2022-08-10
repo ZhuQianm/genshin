@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import ssl
 context = ssl._create_unverified_context()
 ssl._create_default_https_context = ssl._create_unverified_context
-html_doc = "https://10.1.85.253/NS/V10/V10SP1.1/os/adv/lic/base/x86_64/Packages/"
+html_doc = "https:///NS/V10/V10SP1.1/os/adv/lic/base/x86_64/Packages/"
 req = urllib.request.Request(html_doc)
 webpage = urllib.request.urlopen(req, context=context)
 html = webpage.read()
